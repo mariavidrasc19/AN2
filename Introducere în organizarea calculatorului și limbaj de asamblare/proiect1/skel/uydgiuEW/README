@@ -1,0 +1,13 @@
+Vidrasc Maria 324 CA - Tema 1 IOCLA
+
+Am realizat aceasta folosind 2 functii:
+- functia recursiva "parcurgere" care evalueaza arborele.
+La fiecare nod se realizeaza apelarea unei functii matematice intre nodul
+stang si cel drept.
+Atunci cand ajunge la leaf(la cifre), parintele cel mai mic (operatia cea mai 'adanca')
+se realizeaza recursiv, urcand recursiv pana la prima. Astfel la finalul functiei vom avea in edx,
+registrul in care am apelat de la inceput operatiile pornind din nodul root, rezultatul 
+pe care l-am printat in main.
+
+- functia "myATOI", care ia frunzele(operanzii), initial in format string, si ii converteste 
+in numere zecimale. Functia trateaza atat cazurile de numere negative, cat si pe cele mari. 

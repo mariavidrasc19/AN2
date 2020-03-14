@@ -1,0 +1,795 @@
+
+Running cpp/task-1...
+========================================
+Running cpp/task-1...
+========================================
+Running cpp/task-1...
+========================================
+Running cpp/task-1...
+========================================
+Running cpp/task-1...
+========================================
+Running cpp/task-1...
+========================================
+Running cpp/task-1...
+========================================
+Running cpp/task-2...
+========================================
+Running cpp/task-2...
+========================================
+Running cpp/task-2...
+========================================
+Running cpp/task-2...
+========================================
+Compiling cpp/task-3...
+In file included from /usr/include/c++/7/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/predefined_ops.h: In instantiation of ‘bool __gnu_cxx::__ops::_Iter_less_iter::operator()(_Iterator1, _Iterator2) const [with _Iterator1 = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Iterator2 = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >]’:
+/usr/include/c++/7/bits/stl_algo.h:1847:14:   required from ‘void std::__insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1885:25:   required from ‘void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1971:31:   required from ‘void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:4836:18:   required from ‘void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >]’
+main.cpp:37:40:   required from here
+/usr/include/c++/7/bits/predefined_ops.h:43:23: error: no match for ‘operator<’ (operand types are ‘Homework’ and ‘Homework’)
+       { return *__it1 < *__it2; }
+                ~~~~~~~^~~~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/stl_iterator.h:891:5: note: candidate: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator<(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:891:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/7/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/predefined_ops.h:43:23: note:   ‘Homework’ is not derived from ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’
+       { return *__it1 < *__it2; }
+                ~~~~~~~^~~~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/stl_iterator.h:898:5: note: candidate: template<class _Iterator, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator<(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:898:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/7/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/predefined_ops.h:43:23: note:   ‘Homework’ is not derived from ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’
+       { return *__it1 < *__it2; }
+                ~~~~~~~^~~~~~~~
+/usr/include/c++/7/bits/predefined_ops.h: In instantiation of ‘bool __gnu_cxx::__ops::_Val_less_iter::operator()(_Value&, _Iterator) const [with _Value = Homework; _Iterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >]’:
+/usr/include/c++/7/bits/stl_algo.h:1828:20:   required from ‘void std::__unguarded_linear_insert(_RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Val_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1855:36:   required from ‘void std::__insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1885:25:   required from ‘void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1971:31:   required from ‘void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:4836:18:   required from ‘void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >]’
+main.cpp:37:40:   required from here
+/usr/include/c++/7/bits/predefined_ops.h:90:22: error: no match for ‘operator<’ (operand types are ‘Homework’ and ‘Homework’)
+       { return __val < *__it; }
+                ~~~~~~^~~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/stl_iterator.h:891:5: note: candidate: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator<(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:891:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/7/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/predefined_ops.h:90:22: note:   ‘Homework’ is not derived from ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’
+       { return __val < *__it; }
+                ~~~~~~^~~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/stl_iterator.h:898:5: note: candidate: template<class _Iterator, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator<(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:898:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/7/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/predefined_ops.h:90:22: note:   ‘Homework’ is not derived from ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’
+       { return __val < *__it; }
+                ~~~~~~^~~~~~~
+/usr/include/c++/7/bits/predefined_ops.h: In instantiation of ‘bool __gnu_cxx::__ops::_Iter_less_val::operator()(_Iterator, _Value&) const [with _Iterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Value = Homework]’:
+/usr/include/c++/7/bits/stl_heap.h:133:48:   required from ‘void std::__push_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Distance = long int; _Tp = Homework; _Compare = __gnu_cxx::__ops::_Iter_less_val]’
+/usr/include/c++/7/bits/stl_heap.h:237:23:   required from ‘void std::__adjust_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Distance = long int; _Tp = Homework; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_heap.h:342:22:   required from ‘void std::__make_heap(_RandomAccessIterator, _RandomAccessIterator, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1672:23:   required from ‘void std::__heap_select(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1933:25:   required from ‘void std::__partial_sort(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1948:27:   required from ‘void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1968:25:   required from ‘void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:4836:18:   required from ‘void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >]’
+main.cpp:37:40:   required from here
+/usr/include/c++/7/bits/predefined_ops.h:65:22: error: no match for ‘operator<’ (operand types are ‘Homework’ and ‘Homework’)
+       { return *__it < __val; }
+                ~~~~~~^~~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/stl_iterator.h:891:5: note: candidate: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator<(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:891:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/7/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/predefined_ops.h:65:22: note:   ‘Homework’ is not derived from ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’
+       { return *__it < __val; }
+                ~~~~~~^~~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/stl_iterator.h:898:5: note: candidate: template<class _Iterator, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator<(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:898:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/7/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/predefined_ops.h:65:22: note:   ‘Homework’ is not derived from ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’
+       { return *__it < __val; }
+                ~~~~~~^~~~~~~
+========================================
+Compiling cpp/task-3...
+In file included from /usr/include/c++/7/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/predefined_ops.h: In instantiation of ‘bool __gnu_cxx::__ops::_Iter_less_iter::operator()(_Iterator1, _Iterator2) const [with _Iterator1 = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Iterator2 = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >]’:
+/usr/include/c++/7/bits/stl_algo.h:1847:14:   required from ‘void std::__insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1885:25:   required from ‘void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1971:31:   required from ‘void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:4836:18:   required from ‘void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >]’
+main.cpp:37:40:   required from here
+/usr/include/c++/7/bits/predefined_ops.h:43:23: error: no match for ‘operator<’ (operand types are ‘Homework’ and ‘Homework’)
+       { return *__it1 < *__it2; }
+                ~~~~~~~^~~~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/stl_iterator.h:891:5: note: candidate: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator<(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:891:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/7/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/predefined_ops.h:43:23: note:   ‘Homework’ is not derived from ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’
+       { return *__it1 < *__it2; }
+                ~~~~~~~^~~~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/stl_iterator.h:898:5: note: candidate: template<class _Iterator, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator<(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:898:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/7/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/predefined_ops.h:43:23: note:   ‘Homework’ is not derived from ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’
+       { return *__it1 < *__it2; }
+                ~~~~~~~^~~~~~~~
+/usr/include/c++/7/bits/predefined_ops.h: In instantiation of ‘bool __gnu_cxx::__ops::_Val_less_iter::operator()(_Value&, _Iterator) const [with _Value = Homework; _Iterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >]’:
+/usr/include/c++/7/bits/stl_algo.h:1828:20:   required from ‘void std::__unguarded_linear_insert(_RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Val_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1855:36:   required from ‘void std::__insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1885:25:   required from ‘void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1971:31:   required from ‘void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:4836:18:   required from ‘void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >]’
+main.cpp:37:40:   required from here
+/usr/include/c++/7/bits/predefined_ops.h:90:22: error: no match for ‘operator<’ (operand types are ‘Homework’ and ‘Homework’)
+       { return __val < *__it; }
+                ~~~~~~^~~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/stl_iterator.h:891:5: note: candidate: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator<(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:891:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/7/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/predefined_ops.h:90:22: note:   ‘Homework’ is not derived from ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’
+       { return __val < *__it; }
+                ~~~~~~^~~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/stl_iterator.h:898:5: note: candidate: template<class _Iterator, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator<(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:898:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/7/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/predefined_ops.h:90:22: note:   ‘Homework’ is not derived from ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’
+       { return __val < *__it; }
+                ~~~~~~^~~~~~~
+/usr/include/c++/7/bits/predefined_ops.h: In instantiation of ‘bool __gnu_cxx::__ops::_Iter_less_val::operator()(_Iterator, _Value&) const [with _Iterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Value = Homework]’:
+/usr/include/c++/7/bits/stl_heap.h:133:48:   required from ‘void std::__push_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Distance = long int; _Tp = Homework; _Compare = __gnu_cxx::__ops::_Iter_less_val]’
+/usr/include/c++/7/bits/stl_heap.h:237:23:   required from ‘void std::__adjust_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Distance = long int; _Tp = Homework; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_heap.h:342:22:   required from ‘void std::__make_heap(_RandomAccessIterator, _RandomAccessIterator, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1672:23:   required from ‘void std::__heap_select(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1933:25:   required from ‘void std::__partial_sort(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1948:27:   required from ‘void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1968:25:   required from ‘void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:4836:18:   required from ‘void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >]’
+main.cpp:37:40:   required from here
+/usr/include/c++/7/bits/predefined_ops.h:65:22: error: no match for ‘operator<’ (operand types are ‘Homework’ and ‘Homework’)
+       { return *__it < __val; }
+                ~~~~~~^~~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/stl_iterator.h:891:5: note: candidate: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator<(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:891:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/7/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/predefined_ops.h:65:22: note:   ‘Homework’ is not derived from ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’
+       { return *__it < __val; }
+                ~~~~~~^~~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/stl_iterator.h:898:5: note: candidate: template<class _Iterator, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator<(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:898:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/7/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/predefined_ops.h:65:22: note:   ‘Homework’ is not derived from ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’
+       { return *__it < __val; }
+                ~~~~~~^~~~~~~
+========================================
+Compiling cpp/task-3...
+In file included from /usr/include/c++/7/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/predefined_ops.h: In instantiation of ‘bool __gnu_cxx::__ops::_Iter_less_iter::operator()(_Iterator1, _Iterator2) const [with _Iterator1 = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Iterator2 = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >]’:
+/usr/include/c++/7/bits/stl_algo.h:1847:14:   required from ‘void std::__insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1885:25:   required from ‘void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1971:31:   required from ‘void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:4836:18:   required from ‘void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >]’
+main.cpp:37:40:   required from here
+/usr/include/c++/7/bits/predefined_ops.h:43:23: error: no match for ‘operator<’ (operand types are ‘Homework’ and ‘Homework’)
+       { return *__it1 < *__it2; }
+                ~~~~~~~^~~~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/stl_iterator.h:891:5: note: candidate: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator<(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:891:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/7/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/predefined_ops.h:43:23: note:   ‘Homework’ is not derived from ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’
+       { return *__it1 < *__it2; }
+                ~~~~~~~^~~~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/stl_iterator.h:898:5: note: candidate: template<class _Iterator, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator<(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:898:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/7/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/predefined_ops.h:43:23: note:   ‘Homework’ is not derived from ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’
+       { return *__it1 < *__it2; }
+                ~~~~~~~^~~~~~~~
+/usr/include/c++/7/bits/predefined_ops.h: In instantiation of ‘bool __gnu_cxx::__ops::_Val_less_iter::operator()(_Value&, _Iterator) const [with _Value = Homework; _Iterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >]’:
+/usr/include/c++/7/bits/stl_algo.h:1828:20:   required from ‘void std::__unguarded_linear_insert(_RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Val_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1855:36:   required from ‘void std::__insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1885:25:   required from ‘void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1971:31:   required from ‘void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:4836:18:   required from ‘void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >]’
+main.cpp:37:40:   required from here
+/usr/include/c++/7/bits/predefined_ops.h:90:22: error: no match for ‘operator<’ (operand types are ‘Homework’ and ‘Homework’)
+       { return __val < *__it; }
+                ~~~~~~^~~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/stl_iterator.h:891:5: note: candidate: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator<(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:891:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/7/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/predefined_ops.h:90:22: note:   ‘Homework’ is not derived from ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’
+       { return __val < *__it; }
+                ~~~~~~^~~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/stl_iterator.h:898:5: note: candidate: template<class _Iterator, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator<(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:898:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/7/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/predefined_ops.h:90:22: note:   ‘Homework’ is not derived from ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’
+       { return __val < *__it; }
+                ~~~~~~^~~~~~~
+/usr/include/c++/7/bits/predefined_ops.h: In instantiation of ‘bool __gnu_cxx::__ops::_Iter_less_val::operator()(_Iterator, _Value&) const [with _Iterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Value = Homework]’:
+/usr/include/c++/7/bits/stl_heap.h:133:48:   required from ‘void std::__push_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Distance = long int; _Tp = Homework; _Compare = __gnu_cxx::__ops::_Iter_less_val]’
+/usr/include/c++/7/bits/stl_heap.h:237:23:   required from ‘void std::__adjust_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Distance = long int; _Tp = Homework; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_heap.h:342:22:   required from ‘void std::__make_heap(_RandomAccessIterator, _RandomAccessIterator, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1672:23:   required from ‘void std::__heap_select(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1933:25:   required from ‘void std::__partial_sort(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1948:27:   required from ‘void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1968:25:   required from ‘void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:4836:18:   required from ‘void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >]’
+main.cpp:37:40:   required from here
+/usr/include/c++/7/bits/predefined_ops.h:65:22: error: no match for ‘operator<’ (operand types are ‘Homework’ and ‘Homework’)
+       { return *__it < __val; }
+                ~~~~~~^~~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/stl_iterator.h:891:5: note: candidate: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator<(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:891:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/7/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/predefined_ops.h:65:22: note:   ‘Homework’ is not derived from ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’
+       { return *__it < __val; }
+                ~~~~~~^~~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/stl_iterator.h:898:5: note: candidate: template<class _Iterator, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator<(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:898:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/7/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/predefined_ops.h:65:22: note:   ‘Homework’ is not derived from ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’
+       { return *__it < __val; }
+                ~~~~~~^~~~~~~
+========================================
+Compiling cpp/task-3...
+In file included from /usr/include/c++/7/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/predefined_ops.h: In instantiation of ‘bool __gnu_cxx::__ops::_Iter_less_iter::operator()(_Iterator1, _Iterator2) const [with _Iterator1 = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Iterator2 = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >]’:
+/usr/include/c++/7/bits/stl_algo.h:1847:14:   required from ‘void std::__insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1885:25:   required from ‘void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1971:31:   required from ‘void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:4836:18:   required from ‘void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >]’
+main.cpp:37:40:   required from here
+/usr/include/c++/7/bits/predefined_ops.h:43:23: error: no match for ‘operator<’ (operand types are ‘Homework’ and ‘Homework’)
+       { return *__it1 < *__it2; }
+                ~~~~~~~^~~~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/stl_iterator.h:891:5: note: candidate: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator<(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:891:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/7/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/predefined_ops.h:43:23: note:   ‘Homework’ is not derived from ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’
+       { return *__it1 < *__it2; }
+                ~~~~~~~^~~~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/stl_iterator.h:898:5: note: candidate: template<class _Iterator, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator<(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:898:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/7/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/predefined_ops.h:43:23: note:   ‘Homework’ is not derived from ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’
+       { return *__it1 < *__it2; }
+                ~~~~~~~^~~~~~~~
+/usr/include/c++/7/bits/predefined_ops.h: In instantiation of ‘bool __gnu_cxx::__ops::_Val_less_iter::operator()(_Value&, _Iterator) const [with _Value = Homework; _Iterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >]’:
+/usr/include/c++/7/bits/stl_algo.h:1828:20:   required from ‘void std::__unguarded_linear_insert(_RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Val_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1855:36:   required from ‘void std::__insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1885:25:   required from ‘void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1971:31:   required from ‘void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:4836:18:   required from ‘void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >]’
+main.cpp:37:40:   required from here
+/usr/include/c++/7/bits/predefined_ops.h:90:22: error: no match for ‘operator<’ (operand types are ‘Homework’ and ‘Homework’)
+       { return __val < *__it; }
+                ~~~~~~^~~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/stl_iterator.h:891:5: note: candidate: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator<(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:891:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/7/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/predefined_ops.h:90:22: note:   ‘Homework’ is not derived from ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’
+       { return __val < *__it; }
+                ~~~~~~^~~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/stl_iterator.h:898:5: note: candidate: template<class _Iterator, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator<(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:898:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/7/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/predefined_ops.h:90:22: note:   ‘Homework’ is not derived from ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’
+       { return __val < *__it; }
+                ~~~~~~^~~~~~~
+/usr/include/c++/7/bits/predefined_ops.h: In instantiation of ‘bool __gnu_cxx::__ops::_Iter_less_val::operator()(_Iterator, _Value&) const [with _Iterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Value = Homework]’:
+/usr/include/c++/7/bits/stl_heap.h:133:48:   required from ‘void std::__push_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Distance = long int; _Tp = Homework; _Compare = __gnu_cxx::__ops::_Iter_less_val]’
+/usr/include/c++/7/bits/stl_heap.h:237:23:   required from ‘void std::__adjust_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Distance = long int; _Tp = Homework; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_heap.h:342:22:   required from ‘void std::__make_heap(_RandomAccessIterator, _RandomAccessIterator, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1672:23:   required from ‘void std::__heap_select(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1933:25:   required from ‘void std::__partial_sort(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1948:27:   required from ‘void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:1968:25:   required from ‘void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/7/bits/stl_algo.h:4836:18:   required from ‘void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<Homework*, std::vector<Homework> >]’
+main.cpp:37:40:   required from here
+/usr/include/c++/7/bits/predefined_ops.h:65:22: error: no match for ‘operator<’ (operand types are ‘Homework’ and ‘Homework’)
+       { return *__it < __val; }
+                ~~~~~~^~~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/stl_iterator.h:891:5: note: candidate: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator<(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:891:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/7/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/predefined_ops.h:65:22: note:   ‘Homework’ is not derived from ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’
+       { return *__it < __val; }
+                ~~~~~~^~~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/stl_iterator.h:898:5: note: candidate: template<class _Iterator, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator<(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:898:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/7/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/sstream:38,
+                 from /usr/include/c++/7/complex:45,
+                 from /usr/include/c++/7/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/stdc++.h:52,
+                 from main.cpp:1:
+/usr/include/c++/7/bits/predefined_ops.h:65:22: note:   ‘Homework’ is not derived from ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’
+       { return *__it < __val; }
+                ~~~~~~^~~~~~~
+========================================
