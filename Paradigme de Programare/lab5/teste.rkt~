@@ -1,0 +1,58 @@
+#lang racket
+(define ones-stream
+  (stream-cons 1 ones-stream))
+
+; extragerea primelor n elemente din șirul s
+
+(define (stream-take s n)
+  (cond ((zero? n) '())
+        ((stream-empty? s) '())
+        (else (cons (stream-first s)
+                    (stream-take (stream-rest s) (- n 1))))))
+ 
+; testare
+(stream-take ones-stream 5) ; va afișa (1 1 1 1 1)
+
+; generator pentru numere naturale
+
+(define (make-naturals k)
+  (stream-cons k (make-naturals (add1 k))))
+ 
+; fluxul numerelor naturale
+(define naturals-stream (make-naturals 0))
+ 
+; testare
+(stream-take naturals-stream 4) ; va afisa (0 1 2 3)
+
+; sirul lui fibonacci
+(define add
+  (lambda (s1 s2)
+    (stream-cons (+ (stream-first s1) (stream-first s2))
+                 (add (stream-rest s1) (stream-rest s2)))))
+
+(define fibo-stream
+  (stream-cons 0
+               (stream-cons 1
+                            (add fibo-stream (stream-rest fibo-stream)))))
+
+(stream-take fibo-stream 20)
+
+
+; sir de numere prime
+(define sieve
+  (lambda (s)
+    (let ((divisor (stream-first s)))
+      (stream-cons
+       ;; păstrează primul element
+       divisor
+       ;; și aplică recursiv algoritmul pe numerele care nu se divid cu el
+       (sieve (stream-filter (lambda (x) (> (modulo x divisor) 0))
+                             (stream-rest s)))))))
+ 
+(define primes-stream
+  (sieve
+   ;; șirul numerelor naturale începând de la 2
+   (stream-rest (stream-rest naturals-stream))))
+ 
+; testare
+(stream-take primes-stream 10) ; va afișa (2 3 5 7 11 13 17 19 23 29)

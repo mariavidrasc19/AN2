@@ -1,0 +1,25 @@
+In file included from /usr/include/x86_64-linux-gnu/c++/7/bits/c++allocator.h:33:0,
+                 from /usr/include/c++/7/bits/allocator.h:46,
+                 from /usr/include/c++/7/string:41,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/istream:38,
+                 from /usr/include/c++/7/fstream:38,
+                 from main.cpp:1:
+/usr/include/c++/7/ext/new_allocator.h: In instantiation of ‘void __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = Task::Edge; _Args = {int&, int&}; _Tp = Task::Edge]’:
+/usr/include/c++/7/bits/alloc_traits.h:475:4:   required from ‘static void std::allocator_traits<std::allocator<_CharT> >::construct(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, _Up*, _Args&& ...) [with _Up = Task::Edge; _Args = {int&, int&}; _Tp = Task::Edge; std::allocator_traits<std::allocator<_CharT> >::allocator_type = std::allocator<Task::Edge>]’
+/usr/include/c++/7/bits/vector.tcc:100:30:   required from ‘void std::vector<_Tp, _Alloc>::emplace_back(_Args&& ...) [with _Args = {int&, int&}; _Tp = Task::Edge; _Alloc = std::allocator<Task::Edge>]’
+main.cpp:46:55:   required from here
+/usr/include/c++/7/ext/new_allocator.h:136:4: error: new initializer expression list treated as compound expression [-fpermissive]
+  { ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/ext/new_allocator.h:136:4: error: no matching function for call to ‘Task::Edge::Edge(int&)’
+main.cpp:21:9: note: candidate: Task::Edge::Edge()
+  struct Edge {
+         ^~~~
+main.cpp:21:9: note:   candidate expects 0 arguments, 1 provided
+main.cpp:21:9: note: candidate: constexpr Task::Edge::Edge(const Task::Edge&)
+main.cpp:21:9: note:   no known conversion for argument 1 from ‘int’ to ‘const Task::Edge&’
+main.cpp:21:9: note: candidate: constexpr Task::Edge::Edge(Task::Edge&&)
+main.cpp:21:9: note:   no known conversion for argument 1 from ‘int’ to ‘Task::Edge&&’

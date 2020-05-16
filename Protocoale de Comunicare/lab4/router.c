@@ -13,19 +13,18 @@ int arp_table_len;
 */
 struct route_table_entry *get_best_route(__u32 dest_ip) {
 	/* TODO 1: Implement the function */
-	int mask = 0;
-	int indice = -1;
+	int ind = -1;
+	int max_mask = 0;
 	for (int i = 0; i < rtable_size; i++) {
-		if ((dest_ip & rtable[i].mask) == rtable[i].prefix && rtable[i].mask > mask) {
-			indice = i;
-			mask = rtable[i].mask;
+		if ((dest_ip & rtable[i].mask) == rtable[i].prefix && max_mask < __builtin_popcount(rtable[i].mask)) {
+			ind = i;
+			max_mask = __builtin_popcount(rtable[i].mask);
 		}
 	}
-	if (indice == -1) {
-		return NULL;
-	} else {
-		return &rtable[indice];
+	if (ind != -1) {
+		return &rtable[ind];
 	}
+	return NULL;
 }
 
 /*
@@ -34,11 +33,11 @@ struct route_table_entry *get_best_route(__u32 dest_ip) {
 */
 struct arp_entry *get_arp_entry(__u32 ip) {
     /* TODO 2: Implement */
-	for (int i = 0; i < arp_table_len; i++) {
-		if (arp_table[i].ip == ip) {
-			return &arp_table[i];
-		}
-	}
+    for (int i = 0; i < arp_table_len; i++) {
+    	if (ip == arp_table[i].ip) {
+    		return &arp_table[i];
+    	}
+    }
     return NULL;
 }
 
@@ -61,31 +60,38 @@ int main(int argc, char *argv[])
 		struct ether_header *eth_hdr = (struct ether_header *)m.payload;
 		struct iphdr *ip_hdr = (struct iphdr *)(m.payload + sizeof(struct ether_header));
 		/* TODO 3: Check the checksum */
-		if (ip_checksum(ip_hdr, sizeof(struct iphdr)) != ip_hdr->check) {
-			break;
+		uint16_t old = ip_hdr->check;
+		ip_hdr->check = 0;
+		if (ip_checksum(ip_hdr, sizeof(struct iphdr)) != old) {
+			continue;
 		}
-		
 
 		/* TODO 4: Check TTL >= 1 */
 		if (ip_hdr->ttl < 1) {
-			break;
+			continue;
 		}
 
 		/* TODO 5: Find best matching route (using the function you wrote at TODO 1) */
-		struct route_table_entry *r = get_best_route(ip_hdr->daddr);
+		struct route_table_entry* r_entry = get_best_route(ip_hdr->daddr);
+		if (r_entry == NULL) {
+			continue;
+		}
 
 		/* TODO 6: Update TTL and recalculate the checksum */
 		ip_hdr->ttl--;
-		if (ip_hdr->ttl < 1) {
-			DIE(ip_hdr, "wrong TTL");
-		}
+		ip_hdr->check = 0;
+		ip_hdr->check = ip_checksum(ip_hdr, sizeof(struct iphdr));
 
 		/* TODO 7: Find matching ARP entry and update Ethernet addresses */
-		struct arp_entry *a = get_arp_entry(r->next_hop);
-		get_interface_mac(r->interface, eth_hdr->ether_shost);
+		struct arp_entry* a_entry = get_arp_entry(r_entry->next_hop);
+		if (a_entry == NULL) {
+			continue;
+		}
+		get_interface_mac(r_entry->interface, eth_hdr->ether_shost);
+		memcpy(eth_hdr->ether_dhost, a_entry->mac, sizeof(a_entry->mac));
 
 		/* TODO 8: Forward the pachet to best_route->interface */
-		m.interface = r->interface;
-		send_packet(m.interface, &m);
+		send_packet(r_entry->interface, &m);
 	}
+	return 0;
 }
